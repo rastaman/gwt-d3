@@ -64,4 +64,8 @@ public class Layout extends JavaScriptObject {
 	public final native Cluster cluster()/*-{
 		return this.cluster();
 	}-*/;
+	
+	public final native Partition partition()/*-{
+		return this.partition();
+	}-*/;
 }

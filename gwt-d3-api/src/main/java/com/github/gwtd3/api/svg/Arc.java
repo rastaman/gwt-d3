@@ -32,6 +32,7 @@
 package com.github.gwtd3.api.svg;
 
 import com.github.gwtd3.api.arrays.Array;
+import com.github.gwtd3.api.layout.Partition;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -207,6 +208,36 @@ public class Arc extends PathDataGenerator {
 			startAngle : oldArc.startAngle,
 			endAngle : oldArc.endAngle
 		};
+	}-*/;
+
+	public final native Arc value( String function )/*-{
+		// all right it's not the best
+		eval("var func = " + function + ";");
+		return this.value( func );
+	}-*/;
+
+	public native final Arc startAngle( String function )/*-{
+		// all right it's not the best
+		eval("var func = " + function + ";");
+		return this.startAngle( func );
+	}-*/;
+
+	public native final Arc endAngle( String function )/*-{
+		// all right it's not the best
+		eval("var func = " + function + ";");
+		return this.endAngle( func );
+	}-*/;
+
+	public native final Arc innerRadius( String function )/*-{
+		// all right it's not the best
+		eval("var func = " + function + ";");
+		return this.innerRadius( func );
+	}-*/;
+
+	public native final Arc outerRadius( String function )/*-{
+		// all right it's not the best
+		eval("var func = " + function + ";");
+		return this.outerRadius( func );
 	}-*/;
 
 }
